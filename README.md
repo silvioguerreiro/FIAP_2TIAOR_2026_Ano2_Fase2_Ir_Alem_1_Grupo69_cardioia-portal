@@ -27,7 +27,7 @@
 
 Portal responsivo que simula, de forma visual, a rotina de um portal de diagnóstico em cardiologia: autenticação, lista de pacientes, agendamento de consultas e um painel com métricas simples. Não há back-end: a autenticação é simulada com Context API e um JWT falso no `localStorage`, os pacientes vêm de uma API pública de exemplo (JSONPlaceholder) com fallback para uma base JSON local, e as consultas ficam no `localStorage`. O foco é a aplicação dos conceitos de Front-End da fase: Hooks avançados (`useState`, `useEffect`, `useContext`, `useReducer`), Context API, roteamento com rotas protegidas, componentização e estilização responsiva com CSS Modules.
 
-Este repositório é o Ir Além 1 da Fase 2 do projeto CardioIA. O repositório principal da fase (extração de sintomas e classificador de risco) é [FIAP_2TIAOR_2026_Ano2_Fase2](https://github.com/silvioguerreiro/FIAP_2TIAOR_2026_Ano2_Fase2); o Ir Além 2 (MLP em Keras para ECG) é [grupo69-cardioia-ecg-mlp](https://github.com/silvioguerreiro/grupo69-cardioia-ecg-mlp).
+Este repositório é o Ir Além 1 da Fase 2 do projeto CardioIA. O repositório principal da fase (extração de sintomas e classificador de risco) é [FIAP_2TIAOR_2026_Ano2_Fase2](https://github.com/silvioguerreiro/FIAP_2TIAOR_2026_Ano2_Fase2); o Ir Além 2 (MLP em Keras para ECG) é [FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_2_Grupo69_-cardioia-ecg-mlp](https://github.com/silvioguerreiro/FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_2_Grupo69_-cardioia-ecg-mlp).
 
 ### Requisitos do enunciado e onde estão atendidos
 
