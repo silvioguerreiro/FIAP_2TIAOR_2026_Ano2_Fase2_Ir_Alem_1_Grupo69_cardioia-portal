@@ -88,7 +88,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
 ```
-FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1/
+FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1_Grupo69_cardioia-portal/
 ├── .github/
 │   └── problem-report.md              # modelo de relato de problemas (modelo FIAP)
 ├── .gitattributes                     # normalização de fim de linha
@@ -149,8 +149,8 @@ FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1/
 
 ```bash
 # 1. Clonar o repositório
-git clone https://github.com/silvioguerreiro/FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1.git
-cd FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1
+git clone https://github.com/silvioguerreiro/FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1_Grupo69_cardioia-portal.git
+cd FIAP_2TIAOR_2026_Ano2_Fase2_Ir_Alem_1_Grupo69_cardioia-portal
 
 # 2. Instalar as dependências
 npm install
