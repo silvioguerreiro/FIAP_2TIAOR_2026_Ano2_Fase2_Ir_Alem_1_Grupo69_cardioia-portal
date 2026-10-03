@@ -1,0 +1,103 @@
+.envoltorio {
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--tam-sm);
+}
+
+.tabela th,
+.tabela td {
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela th {
+  font-weight: 600;
+  color: var(--cor-texto-suave);
+  background: #f7f9f8;
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.tabela td:first-child {
+  min-width: 13rem;
+}
+
+.nome {
+  display: block;
+  font-weight: 600;
+}
+
+.cidade {
+  display: block;
+  font-size: var(--tam-xs);
+  color: var(--cor-texto-suave);
+}
+
+.botaoLinha {
+  min-height: 2rem;
+  padding: 0 0.75rem;
+  font-size: var(--tam-xs);
+  white-space: nowrap;
+}
+
+/* Celular: cada linha vira um cartao com rotulos vindos de data-rotulo */
+@media (max-width: 820px) {
+  .tabela thead {
+    display: none;
+  }
+
+  .tabela,
+  .tabela tbody,
+  .tabela tr,
+  .tabela td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabela tr {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--cor-borda);
+  }
+
+  .tabela tr:last-child {
+    border-bottom: none;
+  }
+
+  .tabela td {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-bottom: none;
+  }
+
+  .tabela td::before {
+    content: attr(data-rotulo);
+    color: var(--cor-texto-suave);
+    font-size: var(--tam-xs);
+    flex: none;
+  }
+
+  .tabela td:first-child {
+    display: block;
+  }
+
+  .tabela td:first-child::before {
+    display: none;
+  }
+
+  .botaoLinha {
+    width: 100%;
+  }
+}

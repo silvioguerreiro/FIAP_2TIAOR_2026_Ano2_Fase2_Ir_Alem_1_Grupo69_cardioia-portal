@@ -1,0 +1,46 @@
+.mensagem {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--cor-borda);
+  border-left-width: 4px;
+  border-radius: var(--raio);
+  background: var(--cor-cartao);
+  display: grid;
+  gap: 0.35rem;
+}
+
+.info {
+  border-left-color: var(--cor-petroleo-claro);
+}
+
+.carregando {
+  border-left-color: var(--cor-petroleo-claro);
+  color: var(--cor-texto-suave);
+}
+
+.erro {
+  border-left-color: var(--cor-coral);
+  background: var(--cor-coral-fundo);
+}
+
+.sucesso {
+  border-left-color: var(--cor-verde);
+  background: var(--cor-verde-fundo);
+}
+
+.vazio {
+  border-style: dashed;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.titulo {
+  font-weight: 600;
+}
+
+.corpo {
+  font-size: var(--tam-sm);
+}
+
+.acao {
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,73 @@
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-left: 4px solid var(--cor-petroleo-claro);
+  border-radius: var(--raio);
+}
+
+.quando {
+  display: grid;
+  line-height: 1.25;
+}
+
+.data {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.hora {
+  color: var(--cor-texto-suave);
+  font-size: var(--tam-sm);
+}
+
+.detalhes {
+  display: grid;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.paciente {
+  font-weight: 600;
+}
+
+.tipo {
+  font-size: var(--tam-sm);
+}
+
+.observacoes {
+  font-size: var(--tam-xs);
+  color: var(--cor-texto-suave);
+  overflow-wrap: anywhere;
+}
+
+.cancelar {
+  min-height: 2rem;
+  padding: 0 0.75rem;
+  font-size: var(--tam-xs);
+}
+
+@media (max-width: 600px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .quando {
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 0.5rem;
+  }
+}

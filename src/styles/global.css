@@ -1,0 +1,189 @@
+/* Tokens de design do portal CardioIA.
+   Paleta clinica e fria: petroleo na navegacao, superficie quase branca,
+   coral reservado a alertas e risco alto, verde para confirmacoes. */
+:root {
+  --cor-petroleo: #0f3d4a;
+  --cor-petroleo-escuro: #0a2b35;
+  --cor-petroleo-claro: #1d5a6b;
+  --cor-superficie: #f3f6f5;
+  --cor-cartao: #ffffff;
+  --cor-borda: #d6dedc;
+  --cor-texto: #17262b;
+  --cor-texto-suave: #5c6f74;
+  --cor-coral: #c0392b;
+  --cor-coral-fundo: #fbe9e6;
+  --cor-ambar: #9a6700;
+  --cor-ambar-fundo: #fbf1d8;
+  --cor-verde: #1b7f5f;
+  --cor-verde-fundo: #e2f3ec;
+  --cor-foco: #2a78d6;
+
+  --fonte: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --tam-xs: 0.8125rem;
+  --tam-sm: 0.9375rem;
+  --tam-md: 1rem;
+  --tam-lg: 1.25rem;
+  --tam-xl: 1.75rem;
+  --tam-xxl: 2.5rem;
+
+  --raio: 6px;
+  --raio-grande: 10px;
+  --largura-rail: 232px;
+  --largura-conteudo: 1080px;
+  --espaco: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  font-size: var(--tam-md);
+  line-height: 1.5;
+  color: var(--cor-texto);
+  background: var(--cor-superficie);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: var(--tam-xl);
+}
+
+h2 {
+  font-size: var(--tam-lg);
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--cor-petroleo-claro);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--cor-foco);
+  outline-offset: 2px;
+}
+
+/* Botoes compartilhados */
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.5rem;
+  padding: 0 1rem;
+  border: 1px solid transparent;
+  border-radius: var(--raio);
+  background: var(--cor-petroleo);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 120ms ease;
+}
+
+.botao:hover {
+  background: var(--cor-petroleo-claro);
+}
+
+.botao:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.botaoSecundario {
+  background: transparent;
+  color: var(--cor-petroleo);
+  border-color: var(--cor-petroleo);
+}
+
+.botaoSecundario:hover {
+  background: #e4edeb;
+}
+
+.botaoPerigo {
+  background: transparent;
+  color: var(--cor-coral);
+  border-color: var(--cor-coral);
+}
+
+.botaoPerigo:hover {
+  background: var(--cor-coral-fundo);
+}
+
+/* Campos de formulario compartilhados */
+.campo {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.campo label {
+  font-size: var(--tam-sm);
+  font-weight: 500;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  background: #fff;
+}
+
+.campo textarea {
+  resize: vertical;
+}
+
+.ajuda {
+  font-size: var(--tam-xs);
+  color: var(--cor-texto-suave);
+}
+
+.visualmenteOculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

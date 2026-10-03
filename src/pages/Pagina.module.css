@@ -1,0 +1,48 @@
+.cabecalho {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.descricao {
+  color: var(--cor-texto-suave);
+  max-width: 70ch;
+}
+
+.gradeIndicadores {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.secao {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.cabecalhoSecao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filtros {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 1rem;
+  max-width: 40rem;
+}
+
+@media (max-width: 1024px) {
+  .gradeIndicadores {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .gradeIndicadores,
+  .filtros {
+    grid-template-columns: 1fr;
+  }
+}

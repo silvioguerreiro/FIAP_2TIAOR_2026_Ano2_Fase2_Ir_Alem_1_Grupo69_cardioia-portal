@@ -1,0 +1,16 @@
+.traco {
+  display: block;
+  overflow: visible;
+}
+
+.animado path {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: desenhar 1.6s ease-out forwards;
+}
+
+@keyframes desenhar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

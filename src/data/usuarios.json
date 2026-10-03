@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Dr. Silvio Guerreiro",
+    "email": "medico@cardioia.local",
+    "senha": "cardio123",
+    "perfil": "Cardiologista"
+  },
+  {
+    "id": 2,
+    "nome": "Marcos Lima",
+    "email": "recepcao@cardioia.local",
+    "senha": "agenda123",
+    "perfil": "Recepção"
+  }
+]

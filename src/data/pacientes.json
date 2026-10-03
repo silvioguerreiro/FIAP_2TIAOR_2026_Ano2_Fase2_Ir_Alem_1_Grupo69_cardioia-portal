@@ -1,0 +1,12 @@
+[
+  { "id": 1, "nome": "Antônio Ribeiro da Costa", "idade": 67, "sexo": "M", "cidade": "Cuiabá", "convenio": "Particular", "condicao": "Hipertensão arterial", "risco": "alto", "ultimaConsulta": "2026-09-12" },
+  { "id": 2, "nome": "Maria das Graças Oliveira", "idade": 58, "sexo": "F", "cidade": "Várzea Grande", "convenio": "Plano Vida", "condicao": "Insuficiência cardíaca", "risco": "alto", "ultimaConsulta": "2026-09-20" },
+  { "id": 3, "nome": "João Pedro Almeida", "idade": 34, "sexo": "M", "cidade": "Cuiabá", "convenio": "SUS", "condicao": "Palpitações em investigação", "risco": "moderado", "ultimaConsulta": "2026-08-30" },
+  { "id": 4, "nome": "Luciana Ferreira Santos", "idade": 45, "sexo": "F", "cidade": "Rondonópolis", "convenio": "Plano Vida", "condicao": "Dislipidemia", "risco": "baixo", "ultimaConsulta": "2026-07-15" },
+  { "id": 5, "nome": "Carlos Eduardo Mendes", "idade": 72, "sexo": "M", "cidade": "Sinop", "convenio": "SUS", "condicao": "Fibrilação atrial", "risco": "alto", "ultimaConsulta": "2026-09-25" },
+  { "id": 6, "nome": "Fernanda Souza Lima", "idade": 29, "sexo": "F", "cidade": "Cuiabá", "convenio": "Particular", "condicao": "Avaliação pré-operatória", "risco": "baixo", "ultimaConsulta": "2026-09-02" },
+  { "id": 7, "nome": "Sebastião Nunes Pereira", "idade": 63, "sexo": "M", "cidade": "Cáceres", "convenio": "SUS", "condicao": "Angina estável", "risco": "moderado", "ultimaConsulta": "2026-08-18" },
+  { "id": 8, "nome": "Rosângela Martins Rocha", "idade": 51, "sexo": "F", "cidade": "Tangará da Serra", "convenio": "Plano Vida", "condicao": "Hipertensão arterial", "risco": "moderado", "ultimaConsulta": "2026-09-08" },
+  { "id": 9, "nome": "Paulo Henrique Barbosa", "idade": 40, "sexo": "M", "cidade": "Cuiabá", "convenio": "Particular", "condicao": "Sopro cardíaco em investigação", "risco": "baixo", "ultimaConsulta": "2026-06-27" },
+  { "id": 10, "nome": "Ana Beatriz Carvalho", "idade": 76, "sexo": "F", "cidade": "Várzea Grande", "convenio": "SUS", "condicao": "Insuficiência cardíaca", "risco": "alto", "ultimaConsulta": "2026-09-28" }
+]

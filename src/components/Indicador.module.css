@@ -1,0 +1,35 @@
+.indicador {
+  padding: 1.1rem 1.25rem;
+  background: var(--cor-cartao);
+  border: 1px solid var(--cor-borda);
+  border-top: 4px solid var(--cor-petroleo);
+  border-radius: var(--raio);
+  display: grid;
+  gap: 0.15rem;
+}
+
+.alerta {
+  border-top-color: var(--cor-coral);
+}
+
+.valor {
+  font-size: var(--tam-xxl);
+  font-weight: 600;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.alerta .valor {
+  color: var(--cor-coral);
+}
+
+.rotulo {
+  font-size: var(--tam-sm);
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+.detalhe {
+  font-size: var(--tam-xs);
+  color: var(--cor-texto-suave);
+}

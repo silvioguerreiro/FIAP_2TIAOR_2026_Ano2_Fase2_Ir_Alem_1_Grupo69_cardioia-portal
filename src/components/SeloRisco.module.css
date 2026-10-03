@@ -1,0 +1,27 @@
+.selo {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: var(--tam-xs);
+  font-weight: 500;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.alto {
+  background: var(--cor-coral-fundo);
+  color: var(--cor-coral);
+  border-color: #f0c3bd;
+}
+
+.moderado {
+  background: var(--cor-ambar-fundo);
+  color: var(--cor-ambar);
+  border-color: #ecd9a4;
+}
+
+.baixo {
+  background: var(--cor-verde-fundo);
+  color: var(--cor-verde);
+  border-color: #b9e0d1;
+}
